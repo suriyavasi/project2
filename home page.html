@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .border{
+            border: 1px solid black;
+            width: 100%;
+            height: 80px;
+            background-color: burlywood;
+        }
+        .text{
+            color: red;
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+         }
+         .text2{
+            text-align: center;
+            margin: auto;
+         }
+         .border2{
+            border: 1px solid black;
+            width: 100%;
+            height: 90px;
+            margin-top: 10px;
+            /* background-color: burlywood; */
+         }
+         .logo{
+            border: 1px solid black;
+            height: 40px;
+            width: 40px;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-style:italic ;
+         }
+         .but{
+            margin-left:500px ;
+            margin-top: 10px;
+         }
+         .but a{
+            /* background-color: yellow; */
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+            text-align: center;
+            padding-top:6px ;
+           
+         }
+         .but a:hover{
+                background-color: aqua;
+
+                
+         }
+         .but  a{
+            /* visibility: hidden; */
+            position: relative;
+            display: inline-block;
+            
+         }
+         .but a div{
+            visibility: hidden;
+            position: absolute;
+            margin-top: 20px;
+            font-size: x-large;
+            border: 1px solid black;
+            color: white;
+            background-color:black ;
+            border-radius: 5px;
+            padding: 3px;
+            margin-left: 20px;
+         }
+         .but  a:hover div{
+              visibility: visible;
+         }
+
+
+         .div3>h1{
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 10px;
+         }
+         .div3>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-left: 650px;
+            margin-top: 250px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+            
+         }
+          .div3{
+            background-image: url("img1.jpg");
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+         .img{
+            display: grid;
+            grid-template-columns: auto auto;
+         }
+         .price{
+            background-image: url("img2.jpg");
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-size: cover;
+            margin-top: 70px;
+            margin-left: 280px;
+         }
+         .special{
+            background-image: url("strawberry.webp");
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-size: cover;
+            margin-top: 70px;
+        }
+        .price>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            margin-left: 110px;
+            margin-top: 250px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+           
+        }
+        .special>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            margin-left: 110px;
+            margin-top: 250px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        
+        }
+        .feature{
+            color: red;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .image{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+        .image1{
+            background-image: url("image1.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+        
+        }
+        .image2{
+            background-image: url("image2.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+        }
+        .image3{
+            background-image: url("image3.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+        
+        }
+        .image1 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        
+        }
+        
+
+        .image2 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        }
+        .image3 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        @media screen and (min-width:481px) and (max-width:768px){
+            .border{
+            border: 1px solid black;
+            width: 481px;
+            height: 80px;
+            background-color: burlywood;
+        }
+        .text{
+            color: red;
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+         }
+         .text2{
+            text-align: center;
+            margin: auto;
+         }
+         .border2{
+            border: 1px solid black;
+            width: 481px;
+            height: 90px;
+            margin-top: 10px;
+            /* background-color: burlywood; */
+         }
+         .logo{
+            border: 1px solid black;
+            height: 40px;
+            width: 40px;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-style:italic ;
+         }
+         .but{
+            margin-left:100px ;
+            margin-top: 10px;
+         }
+         .but a{
+            /* background-color: yellow; */
+            height: 30px;
+            width: 80px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+         }
+         .but a:hover{
+                background-color: aqua;
+         }
+
+         .div3>h1{
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-left: 0px;
+    
+         }
+         .div3>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-left: 200px;
+            margin-top: 250px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+            
+         }
+          .div3{
+            background-image: url("img1.jpg");
+            height: 1000px;
+            width: 481px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+         .img{
+            display: grid;
+            grid-template-columns: auto;
+         }
+         .price{
+            background-image: url("img2.jpg");
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-size: cover;
+            margin-top: 70px;
+            margin-left: 90px;
+         }
+         .special{
+            background-image: url("strawberry.webp");
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-size: cover;
+            margin-top: 90px;
+            margin-left: 90px;
+        }
+        .price>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            margin-left: 110px;
+            margin-top: 250px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+           
+        }
+        .special>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            margin-left: 110px;
+            margin-top: 250px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        
+        }
+        .feature{
+            color: red;
+            margin-top: 20px;
+            font-size: 30px;
+            margin-left: -20px;
+        }
+        .image{
+            display: grid;
+            grid-template-columns:  auto;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 10px;
+        }
+        .image1{
+            background-image: url("image1.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+        
+        }
+        .image2{
+            background-image: url("image2.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .image3{
+            background-image: url("image3.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+            margin-top: 10px;
+        
+        }
+        .image1 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        
+        }
+        
+
+        .image2 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        }
+        .image3 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        footer{
+            font-size: small;
+            margin-left: -10px;
+        }
+        }
+
+
+
+        @media screen and (min-width:769px) and (max-width:1024px){
+            .border{
+            border: 1px solid black;
+            width: 1000px;
+            height: 80px;
+            background-color: burlywood;
+        }
+        .text{
+            color: red;
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+         }
+         .text2{
+            text-align: center;
+            margin: auto;
+         }
+         .border2{
+            border: 1px solid black;
+            width: 1000px;
+            height: 90px;
+            margin-top: 10px;
+            /* background-color: burlywood; */
+         }
+         .logo{
+            border: 1px solid black;
+            height: 40px;
+            width: 40px;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-style:italic ;
+         }
+         .but{
+            margin-left:320px ;
+         }
+         .but button{
+            /* background-color: yellow; */
+            height: 30px;
+            width: 80px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+         }
+         .but button:hover{
+                background-color: aqua;
+         }
+
+         .div3>h1{
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-left: 0px;
+    
+         }
+         .div3>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-left: 450px;
+            margin-top: 250px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+            
+         }
+          .div3{
+            background-image: url("img1.jpg");
+            height: 700px;
+            width: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+         .img{
+            display: grid;
+            grid-template-columns: auto auto;
+         }
+         .price{
+            background-image: url("img2.jpg");
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-size: cover;
+            margin-top: 70px;
+            margin-left: 80px;
+         }
+         .special{
+            background-image: url("strawberry.webp");
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-size: cover;
+            margin-top: 70px;
+            margin-left: 60px;
+        }
+        .price>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            margin-left: 110px;
+            margin-top: 250px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+           
+        }
+        .special>button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            margin-left: 110px;
+            margin-top: 250px;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        
+        }
+        .feature{
+            color: red;
+            margin-top: 20px;
+            font-size: 30px;
+            margin-left: 150px;
+        }
+        .image{
+            display: grid;
+            grid-template-columns:  auto auto auto;
+            margin-top: 50px;
+            margin-left: -120px;
+            padding: 10px;
+        }
+        .image1{
+            background-image: url("image1.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+        
+        }
+        .image2{
+            background-image: url("image2.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+        .image3{
+            background-image: url("image3.jpg");
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            border-radius: 20px;
+            margin-left: 10px;
+        
+        }
+        .image1 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        
+        }
+        
+
+        .image2 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        }
+        .image3 button{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            margin-top: 250px;
+            outline: none;
+            box-shadow: 0 0 10px red;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        footer{
+            font-size: x-large;
+            margin-left: 100px;
+        }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h2 class="text">Online</h2>
+        <h3 class="text2">FoodShop</h3>
+    </div>
+
+    <div class="border2">
+        <div class="logo">SK</div>
+        <div class="but">
+            <a href="#fea"><i class="bi bi-house"></i>
+                <div>home</div>
+            </a>
+            <a href="aboutus.html"><i class="bi bi-file-earmark-person"></i>
+                <div>about</div>
+            </a>
+            <a href="menu.html"><i class="bi bi-list"></i>
+                <div>menu</div>
+            </a>
+            <a href="contactus.html"><i class="bi bi-person-rolodex"></i>
+                <div>contact</div>
+            </a>
+        </div>
+       
+    </div>
+
+    <div class="div3">
+ 
+        <h1>Welcome To Online FoodShop</h1>
+        <button>Order Now <i class="bi bi-chevron-double-down"></i></button>
+
+      <div class="img">
+        <div class="price">
+            <button>price</button>
+        </div>
+        
+        <div class="special">
+            <button>special</button>
+        </div>
+    </div>  
+    </div>
+      
+
+    <div class="feature" id="fea">
+        <h2>Featured Products</h2>
+        <div class="image">
+        <div class="image1"><button>Order Now</button></div>
+        <div class="image2"><button>Order Now</button></div>
+        <div class="image3"><button>Order Now</button></div>
+       </div>
+     </div>
+ 
+
+     <footer style="text-align: center; margin-top: 20px;">
+        <h4> &#169; Copy right 2022-2023 OnlineFoodShop. All rights are reserved.</h4>
+    </footer>
+   
+    
+</body>
+</html>

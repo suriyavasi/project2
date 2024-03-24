@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+</head>
+<style>
+    *{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .heading{
+        text-align: center;
+    }
+    .second{
+        font-size: 20px;
+        margin: 50px auto;
+        border: 1px solid black;
+        height: 800px;
+        width: 80%;
+    }
+    .all{
+        margin: 0 auto;
+        height: 600px;
+        width: 50%;
+    }
+    #option{
+        height: 40px;
+        width: 500px;
+        text-align: center;
+        
+    }
+    #name{
+        height: 40px;
+        width: 500px;
+       
+    }
+    #email{
+        height: 40px;
+        width: 500px;
+      
+    }
+    #number{
+        height: 40px;
+        width: 500px;
+       
+    }
+    #submit{
+        height: 30px;
+        width: 80px;
+        outline: none;
+        box-shadow: 0 0 10px red;
+        cursor: pointer;
+    }
+    #reset{
+        height: 30px;
+        width: 80px;
+        outline: none;
+        box-shadow: 0 0 10px red;
+        cursor: pointer;
+    }
+    @media screen and (min-width:481px) and (max-width:768px){
+        .heading{
+        text-align: center;
+    }
+    .second{
+        font-size: 20px;
+        margin: 50px auto;
+        border: 1px solid black;
+        height: 800px;
+        width: 80%;
+    }
+    .all{
+        margin-left: 70px;
+        height: 500px;
+        width: 50%;
+    }
+    #option{
+        height: 40px;
+        width:250px;
+        text-align: center;
+    }
+    #name{
+        height: 40px;
+        width: 230px;
+        border: 1px solid black;
+    }
+    #email{
+        height: 40px;
+        width: 230px;
+        border: 1px solid black;
+    }
+    #number{
+        height: 40px;
+        width: 230px;
+        border: 1px solid black;
+    }
+    #submit{
+        height: 30px;
+        width: 80px;
+        outline: none;
+        box-shadow: 0 0 10px red;
+        cursor: pointer;
+    }
+    #reset{
+        height: 30px;
+        width: 80px;
+        outline: none;
+        box-shadow: 0 0 10px red;
+        cursor: pointer;
+    }
+    textarea{
+        width: 230px;
+        border: 1px solid black;
+    }
+    }
+    @media screen and (min-width:769px) and (max-width:1024px){
+        .heading{
+        text-align: center;
+    }
+    .second{
+        font-size: 20px;
+        margin: 50px auto;
+        border: 1px solid black;
+        height: 800px;
+        width: 80%;
+    }
+    .all{
+        margin: 0 auto;
+        height: 600px;
+        width: 50%;
+    }
+    #option{
+        height: 40px;
+        width: 350px;
+        text-align: center;
+        border: 1px solid black;
+        
+    }
+    #name{
+        height: 40px;
+        width: 350px;
+        border: 1px solid black;
+       
+    }
+    #email{
+        height: 40px;
+        width: 350px;
+        border: 1px solid black;
+      
+    }
+    #number{
+        height: 40px;
+        width: 350px;
+        border: 1px solid black;
+       
+    }
+    #submit{
+        height: 30px;
+        width: 80px;
+        outline: none;
+        box-shadow: 0 0 10px red;
+        cursor: pointer;
+    }
+    #reset{
+        height: 30px;
+        width: 80px;
+        outline: none;
+        box-shadow: 0 0 10px red;
+        cursor: pointer;
+    }
+    textarea{
+        width: 350px;
+        border: 1px solid black;
+    }
+    }
+
+</style>
+<body>
+    <div class="first">
+        <div class="second">
+            <h1 class="heading">contact us</h1>
+            <div class="all">
+            <form>
+                <label>Select Query</label>
+            </br> 
+                <select id="option">
+                    <option selected disabled>Related Issues</option>
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                </select>
+            </br>
+
+                name:<br>
+                <input type="text" id="name" placeholder="name"></br>
+                email id:<br>
+                <input type="text" id="email" placeholder="email id"></br>
+                mobile number:<br>
+                <input type="number" id="number" placeholder="mobile number"></br>
+                Are You a member of online Foodshop:<br>
+                <input name="yes" type="radio">yes 
+                <input name="yes" type="radio">no
+                </br></br>       
+                Ellaborate your query:<br>
+                <textarea placeholder="any query" rows="4" cols="50"></textarea>  <br><br>
+                <input type="submit" id="submit" onclick="call()">
+                <input type="reset" id="reset">
+            </form>
+            </div>
+            
+
+              <script>
+                   function call(){
+                          alert('Successfully submitted');
+                   }
+              </script>
+    
+        </div>
+    </div>
+ 
+</body>
+</html>
